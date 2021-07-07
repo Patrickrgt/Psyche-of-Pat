@@ -382,7 +382,7 @@ html {
   }
 }
 
-@media screen and (max-width: 416px), screen and (max-height: 896px) {
+@media screen and (max-width: 416px), screen and (max-height: 767px) {
   html {
     font-family: "Roboto", sans-serif;
     overflow: scroll;
@@ -418,7 +418,7 @@ html {
   }
 
   .card-button {
-    font-size: 2.7vh !important;
+    font-size: 2vh !important;
   }
 
   .card-content-container {
@@ -463,12 +463,12 @@ html {
   }
 
   .card-styling {
-    min-height: 50vh;
-    max-height: 50vh;
+    min-height: 40vh;
+    max-height: 40vh;
   }
 
   .card-content-container {
-    min-height: 45vh;
-    max-height: 45vh;
+    min-height: 35vh;
+    max-height: 35vh;
   }
 }
