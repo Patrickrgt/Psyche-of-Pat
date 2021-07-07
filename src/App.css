@@ -348,6 +348,18 @@ html {
 
 @media screen and (max-width: 1536px), screen and (max-height: 864px) {
   .card-styling {
+    min-height: 40vh;
+    max-height: 40vh;
+  }
+
+  .card-content-container {
+    min-height: 31vh;
+    max-height: 31vh;
+  }
+}
+
+@media screen and (max-width: 1920px), screen and (max-height: 1080px) {
+  .card-styling {
     min-height: 39vh;
     max-height: 39vh;
   }
@@ -358,14 +370,105 @@ html {
   }
 }
 
-@media screen and (max-width: 1920px), screen and (max-height: 1080px) {
-  /* .card-styling {
-    min-height: 39vh;
-    max-height: 39vh;
+@media screen and (max-width: 2560px), screen and (max-height: 1440px) {
+  .card-styling {
+    min-height: 38vh;
+    max-height: 38vh;
   }
 
   .card-content-container {
     min-height: 30vh;
     max-height: 30vh;
-  } */
+  }
+}
+
+@media screen and (max-width: 416px), screen and (max-height: 896px) {
+  html {
+    font-family: "Roboto", sans-serif;
+    overflow: scroll;
+  }
+
+  .nav-image-container {
+    margin-top: 0;
+  }
+
+  #videoPlayer {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .video-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+    background: linear-gradient(rgba(0, 0, 0, 0), black);
+    opacity: 0.3;
+    margin-left: 0;
+    left: 0;
+  }
+
+  .card-styling {
+    max-width: 100%;
+  }
+
+  .card-button {
+    font-size: 2.7vh !important;
+  }
+
+  .card-content-container {
+    padding: 0 12px;
+  }
+
+  .overlay-quote {
+    font-size: 2.35vh;
+  }
+
+  .nav-container {
+    display: inline-block;
+  }
+
+  .nav-image-container {
+    display: inline-block;
+    text-align: center;
+    width: 100% !important;
+    margin-bottom: 0;
+    margin: 0;
+    height: 100% !important;
+  }
+
+  .nav-image-container img {
+    display: inline-block;
+    text-align: center;
+    height: 100% !important;
+  }
+
+  .grid-column-mobile {
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  .nav-image-container:hover {
+    background: grey;
+    transition: all 1s ease;
+    transform: translateX(0);
+    /* background-position: left;
+    transition: all 1s ease;
+    transform: translateX(1vw); */
+  }
+
+  .card-styling {
+    min-height: 50vh;
+    max-height: 50vh;
+  }
+
+  .card-content-container {
+    min-height: 45vh;
+    max-height: 45vh;
+  }
 }
