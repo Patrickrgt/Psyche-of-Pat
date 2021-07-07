@@ -50,6 +50,7 @@ const VideoPlayer = (props) => {
         autoplay
         loop
         muted
+        playsInline
       >
         <source src={props.pv} type="video/mp4"></source>
       </video>
