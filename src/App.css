@@ -382,7 +382,7 @@ html {
   }
 }
 
-@media screen and (max-width: 416px), screen and (max-height: 767px) {
+@media screen and (max-width: 426px), screen and (max-height: 767px) {
   html {
     font-family: "Roboto", sans-serif;
     overflow: scroll;
@@ -451,6 +451,9 @@ html {
   .grid-column-mobile {
     overflow: auto;
     white-space: nowrap;
+    position: absolute !important;
+    bottom: 0 !important;
+    padding: 0;
   }
 
   .nav-image-container:hover {
@@ -463,12 +466,49 @@ html {
   }
 
   .card-styling {
-    min-height: 40vh;
-    max-height: 40vh;
+    color: white;
+    min-height: 50vh;
+    max-height: 50vh;
+  }
+
+  .card-text {
+    color: black;
+  }
+
+  .card-container {
+    background: linear-gradient(black, rgba(0, 0, 0, 0));
   }
 
   .card-content-container {
-    min-height: 35vh;
-    max-height: 35vh;
+    min-height: 43vh;
+    max-height: 43vh;
+    height: 100vh;
+  }
+
+  .MuiPaper-root {
+    background-color: rgba(0, 0, 0, 0) !important;
+  }
+
+  .media-text {
+    color: white;
+    font-weight: 500;
+  }
+
+  .react-wallpaper {
+    opacity: 1;
+  }
+
+  .MuiPaper-elevation1 {
+    box-shadow: none !important;
+  }
+
+  #root {
+  }
+
+  .card-button {
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: none;
+    color: white;
+    font-weight: 600;
   }
 }

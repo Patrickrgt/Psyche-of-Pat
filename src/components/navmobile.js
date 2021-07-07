@@ -263,7 +263,10 @@ class NavMobile extends Component {
                             : "inactive"
                         }
                       >
-                        <div className="card-content-container">
+                        <div
+                          // id={this.state.pv}
+                          className="card-content-container"
+                        >
                           <Typography className="card-text">
                             <p className="media-text animate__animated animate__fadeIn">
                               {media}
