@@ -271,7 +271,12 @@ class NavMobile extends Component {
                         }
                       >
                         <div className="card-content-container">
-                          <Typography className="card-text">{media}</Typography>
+                          <Typography className="card-text">
+                            {" "}
+                            <p className="media-text animate__animated animate__fadeIn">
+                              {media}
+                            </p>
+                          </Typography>
                         </div>
                       </div>
                     )
