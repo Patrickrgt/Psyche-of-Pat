@@ -266,7 +266,7 @@ class NavMobile extends Component {
                           Object.keys(this.state.mediaObjects[this.state.pv])[
                             index
                           ]
-                            ? "card-styling"
+                            ? ""
                             : "inactive"
                         }
                       >
