@@ -86,6 +86,8 @@ class NavMobile extends Component {
   };
 
   componentDidMount() {
+    window.scrollTo(0, 1);
+
     this.setState(
       {
         pv: "hnk",
