@@ -525,19 +525,20 @@ html {
   }
 
   .card-content-container {
-    /* height: 50%; */
-
     height: 80%;
     text-align: left;
     overflow: auto;
-    /* border: 4px dashed blue; */
-
+    border: 4px dashed blue;
     min-height: 80%;
     max-height: 80%;
     position: absolute;
     overflow: auto;
     z-index: 2;
-    /* flex-wrap: wrap; */
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
   }
 
   .card-text {

@@ -289,12 +289,12 @@ class NavMobile extends Component {
           )}
 
           <div className="card-container-tab">
-            <img
+            {/* <img
               onClick={() => this.handleMenu()}
               className="menu-button"
               src="https://picsum.photos/50"
               alt="arrow"
-            ></img>
+            ></img> */}
             {this.state.menu === true ? (
               <div className="grid-column-mobile">
                 {this.state.anime.map((animeTitle, index) => (
