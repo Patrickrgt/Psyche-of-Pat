@@ -468,7 +468,7 @@ html {
 
   .grid-column-mobile {
     overflow: scroll;
-    white-space: nowrap;
+
     height: 100%;
   }
 
