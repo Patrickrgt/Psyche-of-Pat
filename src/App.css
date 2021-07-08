@@ -333,7 +333,7 @@ html {
   }
 } */
 
-@media screen and (max-width: 1366px), screen and (max-height: 768px) {
+/* @media screen and (max-width: 1366px), screen and (max-height: 768px) {
   .card-styling {
     min-height: 39vh;
     max-height: 39vh;
@@ -379,7 +379,7 @@ html {
     min-height: 30vh;
     max-height: 30vh;
   }
-}
+} */
 
 @media screen and (max-width: 426px), screen and (max-height: 767px) {
   * {
@@ -517,6 +517,7 @@ html {
   }
 
   .card-container-tab {
+    flex-grow: 0.1;
     background: linear-gradient(black, rgba(0, 0, 0, 0));
     overflow: auto;
     border: 4px dashed yellow;
@@ -526,13 +527,14 @@ html {
     /* height: 50%; */
 
     /* flex-grow: inherit; */
-    height: 80%;
+    height: 100%;
     text-align: left;
     overflow: auto;
     /* border: 4px dashed blue; */
-    /* position: absolute; */
-    min-height: 80%;
-    max-height: 80%;
+    position: absolute;
+    min-height: 100%;
+    max-height: 100%;
+    z-index: 2;
     /* flex-wrap: wrap; */
   }
 
