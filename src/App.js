@@ -10,7 +10,7 @@ function App() {
   }
   return (
     <div className="App">
-      <Nav></Nav>
+      <NavMobile></NavMobile>
     </div>
   );
 }
