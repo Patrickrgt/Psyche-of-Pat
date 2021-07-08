@@ -468,7 +468,6 @@ html {
 
   .grid-column-mobile {
     overflow: scroll;
-
     height: 100%;
   }
 
@@ -524,15 +523,13 @@ html {
   .card-content-container {
     /* height: 50%; */
     padding: 0 12px;
-    flex-grow: inherit;
     height: 90%;
     text-align: left;
     overflow: auto;
     border: 4px dashed blue;
     position: absolute;
-    min-height: none;
-    max-height: none;
-    flex-wrap: wrap;
+    min-height: 90%;
+    max-height: 90%;
   }
 
   .card-text {
