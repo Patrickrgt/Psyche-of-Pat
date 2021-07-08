@@ -209,7 +209,7 @@ class NavMobile extends Component {
       <React.Fragment>
         <div id={this.state.pv} className="react-wallpaper"></div>
 
-        <item>
+        <div className="flex-container">
           <section className="video-container">
             {this.state.handleMedia === true ? (
               <React.Fragment>
@@ -271,11 +271,7 @@ class NavMobile extends Component {
                         }
                       >
                         <div className="card-content-container">
-                          <Typography className="card-text">
-                            <p className="media-text animate__animated animate__fadeIn">
-                              {media}
-                            </p>
-                          </Typography>
+                          <Typography className="card-text">{media}</Typography>
                         </div>
                       </div>
                     )
@@ -286,40 +282,41 @@ class NavMobile extends Component {
           ) : (
             <div></div>
           )}
-        </item>
 
-        <img
-          onClick={() => this.handleMenu()}
-          className="menu-button"
-          src="https://picsum.photos/50"
-          alt="arrow"
-        ></img>
-
-        {this.state.menu === true ? (
-          <div className="grid-column-mobile">
-            {this.state.anime.map((animeTitle, index) => (
-              <div
-                id={animeTitle}
-                className={
-                  animeTitle === this.state.currAnime
-                    ? "nav-image-container active"
-                    : "nav-image-container"
-                }
-                onClick={(e) => this.handleMediaClick(e)}
-              >
-                <img
-                  id={animeTitle}
-                  className="media-logo"
-                  src={this.state.mediaLogos[index]}
-                  alt={animeTitle}
-                  onClick={(e) => this.handleMediaClick(e)}
-                />
+          <div className="card-container-tab">
+            <img
+              onClick={() => this.handleMenu()}
+              className="menu-button"
+              src="https://picsum.photos/50"
+              alt="arrow"
+            ></img>
+            {this.state.menu === true ? (
+              <div className="grid-column-mobile">
+                {this.state.anime.map((animeTitle, index) => (
+                  <div
+                    id={animeTitle}
+                    className={
+                      animeTitle === this.state.currAnime
+                        ? "nav-image-container active"
+                        : "nav-image-container"
+                    }
+                    onClick={(e) => this.handleMediaClick(e)}
+                  >
+                    <img
+                      id={animeTitle}
+                      className="media-logo"
+                      src={this.state.mediaLogos[index]}
+                      alt={animeTitle}
+                      onClick={(e) => this.handleMediaClick(e)}
+                    />
+                  </div>
+                ))}
               </div>
-            ))}
+            ) : (
+              <div></div>
+            )}
           </div>
-        ) : (
-          <div></div>
-        )}
+        </div>
       </React.Fragment>
     );
   }
