@@ -238,7 +238,7 @@ class NavMobile extends Component {
 
           {this.state.handleMedia === true ? (
             <div className="card-container">
-              <Card className="card-styling animate__animated animate__fadeInUp animate__delay-1s">
+              <Card className="card-styling animate__animated animate__fadeInLeft animate__delay-1s">
                 <CardActions>
                   {this.state.category.map((categoryTab) => (
                     <button
@@ -274,7 +274,6 @@ class NavMobile extends Component {
                       >
                         <div className="card-content-container">
                           <Typography className="card-text">
-                            {" "}
                             <p className="media-text animate__animated animate__fadeIn">
                               {media}
                             </p>
