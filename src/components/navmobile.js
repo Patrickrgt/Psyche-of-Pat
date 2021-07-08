@@ -38,7 +38,7 @@ class NavMobile extends Component {
     storyList: { hnk: "test1", pmmm: "test2", csm: "test3" },
     thoughtsList: { hnk: "thoughts1", pmmm: "thoughts2", csm: "thoughts3" },
     reviewList: { hnk: "review1", pmmm: "review2", csm: "review3" },
-    menu: false,
+    menu: true,
     mediaObjects: {
       hnk: {
         story:
