@@ -383,9 +383,27 @@ html {
 }
 
 @media screen and (max-width: 426px), screen and (max-height: 767px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
   html {
     font-family: "Roboto", sans-serif;
-    overflow: scroll;
+  }
+
+  body {
+    width: 100%;
+    height: 100vh;
+    border: 5px dashed red;
+  }
+
+  .react-wallpaper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
   }
 
   .nav-image-container {
@@ -451,9 +469,6 @@ html {
   .grid-column-mobile {
     overflow: auto;
     white-space: nowrap;
-    position: fixed !important;
-    bottom: 0 !important;
-    padding: 0;
   }
 
   .nav-image-container:hover {
@@ -465,54 +480,62 @@ html {
     transform: translateX(1vw); */
   }
 
-  .card-styling {
-    color: white;
-    min-height: 50vh;
-    max-height: 50vh;
+  .MuiPaper-root {
+    background-color: rgba(0, 0, 0, 0) !important;
   }
 
-  .card-text {
-    color: black;
+  /* Card Container */
+
+  .card-styling {
+    color: white;
+    height: 100%;
+  }
+
+  .card-content-container {
+    height: 100%;
   }
 
   .card-container {
     background: linear-gradient(black, rgba(0, 0, 0, 0));
   }
 
-  .card-content-container {
-    min-height: 43vh;
-    max-height: 43vh;
-    height: 100vh;
-  }
-
-  .MuiPaper-root {
-    background-color: rgba(0, 0, 0, 0) !important;
+  .card-text {
+    height: 100%;
   }
 
   .media-text {
     color: white;
     font-weight: 500;
+    height: 100%;
   }
 
-  .react-wallpaper {
-    opacity: 1;
-  }
+  /* Card Container */
 
-  .MuiPaper-elevation1 {
-    box-shadow: none !important;
-  }
-
-  #root {
-  }
+  /* Card Tabs */
 
   .card-button {
     background-color: rgba(0, 0, 0, 0) !important;
     border: none;
     color: white;
     font-weight: 600;
+    margin: 0.5em auto !important;
   }
+
+  /* Card Tabs */
 
   .overlay-quote {
     bottom: 3vh;
   }
+
+  .menu-button {
+    position: fixed;
+  }
+
+  /* De-Decor */
+
+  .MuiPaper-elevation1 {
+    box-shadow: none !important;
+  }
+
+  /* De-Decor */
 }

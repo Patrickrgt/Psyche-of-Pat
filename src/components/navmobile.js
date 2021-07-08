@@ -38,6 +38,7 @@ class NavMobile extends Component {
     storyList: { hnk: "test1", pmmm: "test2", csm: "test3" },
     thoughtsList: { hnk: "thoughts1", pmmm: "thoughts2", csm: "thoughts3" },
     reviewList: { hnk: "review1", pmmm: "review2", csm: "review3" },
+    menu: false,
     mediaObjects: {
       hnk: {
         story:
@@ -197,6 +198,12 @@ class NavMobile extends Component {
     }
   };
 
+  handleMenu() {
+    this.setState((prevState) => ({
+      menu: !prevState.menu,
+    }));
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -284,27 +291,38 @@ class NavMobile extends Component {
           )}
         </item>
 
-        <div className="grid-column-mobile">
-          {this.state.anime.map((animeTitle, index) => (
-            <div
-              id={animeTitle}
-              className={
-                animeTitle === this.state.currAnime
-                  ? "nav-image-container active"
-                  : "nav-image-container"
-              }
-              onClick={(e) => this.handleMediaClick(e)}
-            >
-              <img
+        <img
+          onClick={() => this.handleMenu()}
+          className="menu-button"
+          src="https://picsum.photos/50"
+          alt="arrow"
+        ></img>
+
+        {this.state.menu === true ? (
+          <div className="grid-column-mobile">
+            {this.state.anime.map((animeTitle, index) => (
+              <div
                 id={animeTitle}
-                className="media-logo"
-                src={this.state.mediaLogos[index]}
-                alt={animeTitle}
+                className={
+                  animeTitle === this.state.currAnime
+                    ? "nav-image-container active"
+                    : "nav-image-container"
+                }
                 onClick={(e) => this.handleMediaClick(e)}
-              />
-            </div>
-          ))}
-        </div>
+              >
+                <img
+                  id={animeTitle}
+                  className="media-logo"
+                  src={this.state.mediaLogos[index]}
+                  alt={animeTitle}
+                  onClick={(e) => this.handleMediaClick(e)}
+                />
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div></div>
+        )}
       </React.Fragment>
     );
   }
