@@ -428,7 +428,7 @@ body {
   }
 } */
 
-@media screen and (max-width: 426px), screen and (max-height: 767px) {
+@media screen and (max-width: 1024px), screen and (max-height: 1366px) {
   * {
     margin: 0;
     padding: 0;
@@ -554,6 +554,7 @@ body {
   }
 
   .media-text {
+    font-size: 2vh;
     transition: all 0.5s ease;
     margin-top: 0;
     padding-bottom: 0;
