@@ -464,7 +464,7 @@ html {
 
   .flex-container {
     /* border: 15px dashed black; */
-    height: 100vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
   }
@@ -482,9 +482,9 @@ html {
   /* Content With the Text for each Media/Anime */
   .card-content-container {
     border: 2px solid #dad8d2;
-    height: 85%;
-    min-height: 85%;
-    max-height: 85%;
+    height: 80%;
+    min-height: 80%;
+    max-height: 80%;
     text-align: left;
     overflow: auto;
     padding: 2% 4%;
@@ -520,9 +520,9 @@ html {
   /* Media Tabs */
 
   .card-container-tab {
-    flex-grow: 0.1;
+    flex-grow: 1;
     margin-top: auto !important;
-    background: linear-gradient(rgba(0, 0, 0, 0), black);
+    /* background: linear-gradient(rgba(0, 0, 0, 0), black); */
     overflow: auto;
 
     /* border: 4px dashed yellow; */
