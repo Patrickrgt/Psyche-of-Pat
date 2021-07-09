@@ -3,9 +3,9 @@ import Nav from "./components/nav.js";
 import NavMobile from "./components/navmobile.js";
 
 function App() {
-  if (window.innerWidth >= 426) {
+  if (window.innerWidth >= 1026) {
     return <Nav></Nav>;
-  } else if (window.innerWidth <= 425) {
+  } else if (window.innerWidth <= 1026) {
     return <NavMobile></NavMobile>;
   }
   return (

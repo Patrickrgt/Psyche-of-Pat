@@ -229,6 +229,7 @@ body {
 }
 
 .media-text {
+  font-size: 2vh;
   transition: all 0.5s ease;
   margin-top: 0;
   padding-bottom: 0;
@@ -428,7 +429,7 @@ body {
   }
 } */
 
-@media screen and (max-width: 1024px), screen and (max-height: 1366px) {
+@media screen and (max-width: 1026px) and (max-height: 1368px) {
   * {
     margin: 0;
     padding: 0;
