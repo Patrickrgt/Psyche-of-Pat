@@ -519,7 +519,7 @@ body {
   .card-container {
     transition: all 1s;
     flex-grow: 1;
-    height: 40%;
+    height: 35%;
     background: linear-gradient(black, rgba(0, 0, 0, 0));
     overflow-y: scroll;
 
