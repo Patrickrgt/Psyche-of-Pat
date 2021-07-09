@@ -458,7 +458,7 @@ html {
     height: 100%;
     min-height: 100%;
     max-height: 100%;
-    overflow: auto;
+    overflow-y: scroll;
     /* border: 8px dashed teal; */
   }
 
@@ -474,7 +474,7 @@ html {
     flex-grow: 1;
     height: 50%;
     background: linear-gradient(black, rgba(0, 0, 0, 0));
-    overflow: auto;
+    overflow-y: scroll;
 
     /* border: 4px dashed yellow; */
   }
@@ -486,7 +486,7 @@ html {
     min-height: 80%;
     max-height: 80%;
     text-align: left;
-    overflow: auto;
+    overflow-y: scroll;
     padding: 2% 4%;
     border-radius: 1%;
     /* Changed Position for fixed height */
@@ -503,7 +503,7 @@ html {
   }
 
   .card-text {
-    overflow: auto;
+    overflow-y: scroll;
   }
 
   .media-text {
@@ -523,14 +523,14 @@ html {
     flex-grow: 1;
     margin-top: auto !important;
     /* background: linear-gradient(rgba(0, 0, 0, 0), black); */
-    overflow: auto;
+    overflow-y: scroll;
 
     /* border: 4px dashed yellow; */
   }
 
   .grid-column-mobile {
     scroll-behavior: smooth;
-    overflow: scroll;
+    overflow-y: scroll;
     white-space: nowrap;
     height: 100%;
   }
