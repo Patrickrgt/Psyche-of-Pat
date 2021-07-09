@@ -152,7 +152,7 @@ class NavMobile extends Component {
     }
 
     document.getElementById("videoPlayer").play();
-    window.location.href = `#${this.state.currAnime}`;
+    // window.location.href = `#${this.state.currAnime}`;
   };
 
   handleCardClick = (e) => {

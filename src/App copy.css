@@ -13,8 +13,7 @@ html {
 body {
   width: 100%;
   height: 100vh;
-  min-height: 100vh;
-  max-height: 100vh;
+  border: 5px dashed red;
   display: flex;
   flex-flow: column;
   scroll-behavior: smooth;
@@ -33,214 +32,22 @@ body {
   opacity: 0.75;
 }
 
-.whole-container {
-  width: 95%;
-  max-width: 95%;
-  min-width: 95%;
-  margin: auto;
-
-  height: 95%;
-  max-height: 95%;
-  min-height: 95%;
-}
-
 .grid-container {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-flow: row;
-  scroll-behavior: smooth;
-}
-
-.grid-column {
-  overflow: auto;
-
-  scroll-behavior: smooth;
-  overflow-y: scroll;
-  height: 100vh;
-  display: flex;
-  flex-flow: column;
-  scroll-behavior: smooth;
-}
-
-.grid-section {
-  margin: auto;
-  width: 100%;
-  overflow: auto;
-}
-
-.nav-image-container {
-  overflow: auto;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  text-align: center;
-  width: 100% !important;
-  height: 20% !important;
-  border-radius: 0;
-  margin: 2% 0;
-  background-color: black;
-  background: linear-gradient(rgba(0, 0, 0, 0), black);
-  border: 2px solid rgb(218, 216, 210);
-}
-
-.nav-image-container img {
-  display: inline-block;
-  text-align: center;
-  height: 80% !important;
-}
-
-.active {
-  pointer-events: none;
-  background: grey;
-  background-position: left;
-}
-
-.card-active {
-  pointer-events: none;
-  color: grey;
-  transition: all 0.5s ease;
-}
-
-.card-button {
-  margin: 1vh auto !important;
-  font-size: 3vh !important;
-  letter-spacing: 0.5vw !important;
-  display: inline-block;
-  border: 0.1em solid #ffffff;
-  background-color: #ffffff;
-  text-align: center;
-}
-
-.inactive {
-  display: none !important;
-}
-
-#videoPlayer {
-  min-width: 95%;
-  max-width: 95%;
-  min-height: 100%;
-  max-height: 100%;
-  display: block;
-
-  margin: 0 auto 0 auto;
-  border-radius: 4px 4px 0 0;
-}
-
-.video-container {
-  position: relative;
-  width: 100%;
-  background-attachment: scroll;
-}
-
-.video-overlay {
+  flex-grow: 1;
+  padding-top: 1%;
   height: 100%;
-  width: 95%;
-  position: absolute;
-  margin-left: -0.52vw;
-  top: 0px;
-  left: 2vw;
-  z-index: 2;
-  background: linear-gradient(rgba(0, 0, 0, 0), black);
-  opacity: 0.3;
-}
-
-.overlay-quote {
-  position: absolute;
-  bottom: 0px;
-  color: white;
-  font-size: 4vh;
-  text-align: left;
-  margin-left: 3vw;
-}
-
-.overlay-author {
-  position: absolute;
-  bottom: 0px;
-  right: 2vw;
-  color: white;
-  font-size: 2vh;
-}
-
-.nav-arrow-up {
-  width: 80% !important;
-
-  background-color: hsl(0, 0%, 44%, 50%);
-  min-height: 4vh;
-  max-height: 4vh;
-  margin: auto;
-  border-radius: 100% 100% 0 0;
-}
-
-.nav-arrow-down {
-  width: 80% !important;
-
-  background-color: hsl(0, 0%, 44%, 50%);
-  min-height: 4vh;
-  max-height: 4vh;
-  margin: auto;
-  border-radius: 0 0 100% 100%;
+  margin: 0 0 auto auto;
+  border: 6px dashed black;
 }
 
 .card-styling {
-  width: 95%;
-  min-width: 95%;
+  transition: all 1s;
   max-width: 95%;
   display: block;
   margin: auto;
-  color: white;
-  height: 100%;
-  min-height: 100%;
-  max-height: 100%;
   overflow-y: scroll;
-}
-
-.flex-container {
-  height: 95vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.card-container {
-  transition: all 1s;
-  flex-grow: 1;
-  height: 50%;
-  overflow-y: scroll;
-}
-
-/* Content With the Text for each Media/Anime */
-.card-content-container {
-  height: 75%;
-  min-height: 75%;
-  max-height: 75%;
-  text-align: left;
-  overflow-y: scroll;
-  padding: 0 4%;
-  border-radius: 1%;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-}
-
-.card-text {
-  overflow-y: scroll;
-}
-
-.media-text {
-  transition: all 0.5s ease;
-  margin-top: 0;
-  padding-bottom: 0;
-  color: black;
-  opacity: 1;
-  white-space: pre-wrap;
-}
-
-.card-container-tab {
-  flex-grow: 1;
-  margin-top: auto !important;
-  overflow-y: scroll;
+  /* min-height: 25vh; */
+  /* max-height: 25vh; */
 }
 
 #hnk {
@@ -286,6 +93,172 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+}
+
+#videoPlayer {
+  min-width: 95%;
+  max-width: 95%;
+  min-height: 95%;
+  max-height: 95%;
+  display: block;
+
+  margin: 0 auto 0 auto;
+  border-radius: 4px 4px 0 0;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  background-attachment: scroll;
+  overflow: hidden;
+}
+
+.video-overlay {
+  height: 100%;
+  width: 95%;
+  position: absolute;
+  margin-left: -0.52vw;
+  top: 0px;
+  left: 2vw;
+  z-index: 2;
+  background: linear-gradient(rgba(0, 0, 0, 0), black);
+  opacity: 0.3;
+}
+
+.overlay-quote {
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  font-size: 4vh;
+  text-align: left;
+  margin-left: 3vw;
+}
+
+.overlay-author {
+  position: absolute;
+  bottom: 0px;
+  right: 2vw;
+  color: white;
+  font-size: 2vh;
+}
+
+.grid-column {
+  overflow-y: auto;
+  min-height: 86.5vh !important;
+  max-height: 86.5vh !important;
+  /* max-height: 81.55vh !important;
+  max-height: 81.55vh !important; */
+}
+
+.nav-arrow-up {
+  width: 80% !important;
+  /* border: 1px solid hsl(0, 0%, 44%, 50%); */
+  background-color: hsl(0, 0%, 44%, 50%);
+  min-height: 4vh;
+  max-height: 4vh;
+  margin: auto;
+  border-radius: 100% 100% 0 0;
+}
+
+.nav-arrow-down {
+  width: 80% !important;
+  /* border: 1px solid hsl(0, 0%, 44%, 50%); */
+  background-color: hsl(0, 0%, 44%, 50%);
+  min-height: 4vh;
+  max-height: 4vh;
+  margin: auto;
+  border-radius: 0 0 100% 100%;
+}
+
+.media-logo {
+  max-height: 15vh;
+  max-width: 100%;
+}
+
+.nav-image-container {
+  width: 80% !important;
+  border: 2px solid hsl(0, 0%, 44%, 50%);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  min-height: 16.2vh;
+  max-height: 16.2vh;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  border-radius: 4px;
+  transition: all 1s ease;
+}
+
+.nav-image-container:hover {
+  background: grey;
+  transition: all 1s ease;
+  transform: translateX(2vw);
+  /* background-position: left;
+  transition: all 1s ease;
+  transform: translateX(1vw); */
+}
+
+.active {
+  pointer-events: none;
+  background: grey;
+  background-position: left;
+}
+
+.card-active {
+  pointer-events: none;
+  color: grey;
+  transition: all 0.5s ease;
+}
+
+.nav-image-container img {
+  margin: auto;
+  display: block;
+}
+
+.card-button {
+  margin: 1vh auto !important;
+  font-size: 3vh !important;
+
+  letter-spacing: 0.5vw !important;
+  display: inline-block;
+
+  border: 0.1em solid #ffffff;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+/* .card-content-container {
+  resize: vertical;
+  min-height: 17.5vh;
+  max-height: 17.5vh;
+  text-align: left;
+  overflow: auto;
+  padding-top: 0 !important;
+} */
+
+.card-content-container {
+  resize: vertical;
+  min-height: 20.5vh;
+  max-height: 20.5vh;
+  text-align: left;
+  overflow: auto;
+  padding-top: 0 !important;
+}
+
+.card-text {
+  font-size: 2vh !important;
+  white-space: pre-wrap;
+}
+
+.media-text {
+  transition: all 0.5s ease;
+  margin-top: 0;
+  padding-bottom: 1em;
+}
+
+.inactive {
+  display: none !important;
 }
 
 /* CSS Animate */
@@ -579,11 +552,11 @@ body {
     scroll-behavior: smooth;
     overflow-y: scroll;
     white-space: nowrap;
+    height: 100%;
   }
 
   .media-logo {
-    max-height: 15vh;
-    max-width: 100%;
+    height: 100%;
   }
 
   .nav-container {

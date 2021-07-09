@@ -248,37 +248,37 @@ class Nav extends Component {
     return (
       <React.Fragment>
         <div id={this.state.pv} className="react-wallpaper"></div>
-        <Mui.Grid container className="grid-container" direction="row">
-          <Mui.Grid item xs={5}>
-            <div className="nav-arrow-up"></div>
-            <div className="grid-column">
-              {this.state.anime.map((animeTitle, index) => (
-                <div>
-                  <div
-                    id={animeTitle}
-                    className={
-                      animeTitle === this.state.currAnime
-                        ? "nav-image-container active"
-                        : "nav-image-container"
-                    }
-                    onClick={(e) => this.handleMediaClick(e)}
-                  >
-                    <img
+        <div className="whole-container">
+          <Mui.Grid container className="grid-container" direction="row">
+            <Mui.Grid item xs={5}>
+              {/* <div className="nav-arrow-up"></div> */}
+              <div className="grid-column">
+                <div className="grid-section">
+                  {this.state.anime.map((animeTitle, index) => (
+                    <div
                       id={animeTitle}
-                      className="media-logo"
-                      src={this.state.mediaLogos[index]}
-                      alt={animeTitle}
+                      className={
+                        animeTitle === this.state.currAnime
+                          ? "nav-image-container active"
+                          : "nav-image-container"
+                      }
                       onClick={(e) => this.handleMediaClick(e)}
-                    />
-                  </div>
+                    >
+                      <img
+                        id={animeTitle}
+                        className="media-logo"
+                        src={this.state.mediaLogos[index]}
+                        alt={animeTitle}
+                        onClick={(e) => this.handleMediaClick(e)}
+                      />
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-            <div className="nav-arrow-down"></div>
-          </Mui.Grid>
+              </div>
+              {/* <div className="nav-arrow-down"></div> */}
+            </Mui.Grid>
 
-          <Mui.Grid item xs={7}>
-            <item>
+            <Mui.Grid className="grid-container" direction="column" xs={7}>
               <section className="video-container">
                 {this.state.handleMedia === true ? (
                   <React.Fragment>
@@ -325,7 +325,7 @@ class Nav extends Component {
                       ))}
                     </CardActions>
 
-                    <div>
+                    <div className="card-container">
                       {/* If PV = said media then we map all object values of said media from the object list */}
                       {Object.values(
                         this.state.mediaObjects[this.state.pv]
@@ -337,7 +337,7 @@ class Nav extends Component {
                             Object.keys(this.state.mediaObjects[this.state.pv])[
                               index
                             ]
-                              ? "card-styling"
+                              ? ""
                               : "inactive"
                           }
                         >
@@ -356,9 +356,9 @@ class Nav extends Component {
               ) : (
                 <div></div>
               )}
-            </item>
+            </Mui.Grid>
           </Mui.Grid>
-        </Mui.Grid>
+        </div>
       </React.Fragment>
     );
   }
