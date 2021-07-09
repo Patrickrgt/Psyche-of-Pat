@@ -153,6 +153,7 @@ class NavMobile extends Component {
     }
 
     document.getElementById("videoPlayer").play();
+    window.location.href = `#${this.state.currAnime}`;
   };
 
   handleCardClick = (e) => {
@@ -237,7 +238,7 @@ class NavMobile extends Component {
           </section>
 
           {this.state.handleMedia === true ? (
-            <div className="card-container">
+            <div className="card-container animate__animated animate__fadeIn animate__delay-1s">
               <Card className="card-styling animate__animated animate__fadeInLeft animate__delay-1s">
                 <CardActions>
                   {this.state.category.map((categoryTab) => (

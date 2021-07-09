@@ -389,6 +389,7 @@ html {
   }
 
   html {
+    scroll-behavior: smooth;
     font-family: "Roboto", sans-serif;
   }
 
@@ -398,6 +399,7 @@ html {
     /* border: 5px dashed red; */
     display: flex;
     flex-flow: column;
+    scroll-behavior: smooth;
   }
 
   .react-wallpaper {
@@ -468,11 +470,12 @@ html {
   }
 
   .card-container {
+    transition: all 1s;
     flex-grow: 1;
     height: 50%;
     background: linear-gradient(black, rgba(0, 0, 0, 0));
-
     overflow: auto;
+
     /* border: 4px dashed yellow; */
   }
 
@@ -519,12 +522,14 @@ html {
   .card-container-tab {
     flex-grow: 0.1;
     margin-top: auto !important;
-    background: linear-gradient(black, rgba(0, 0, 0, 0));
+    background: linear-gradient(rgba(0, 0, 0, 0), black);
     overflow: auto;
+
     /* border: 4px dashed yellow; */
   }
 
   .grid-column-mobile {
+    scroll-behavior: smooth;
     overflow: scroll;
     white-space: nowrap;
     height: 100%;
@@ -545,6 +550,10 @@ html {
     margin-bottom: 0;
     margin: 0;
     height: 100% !important;
+    border-radius: 0;
+    background-color: black;
+    background: linear-gradient(rgba(0, 0, 0, 0), black);
+    border: 2px solid rgb(218, 216, 210);
   }
 
   .nav-image-container img {
@@ -554,7 +563,8 @@ html {
   }
 
   .nav-image-container:hover {
-    background: grey;
+    /* background: grey; */
+    background: linear-gradient(rgba(0, 0, 0, 0), rgb(98, 98, 98));
     transition: all 1s ease;
     transform: translateX(0);
   }
@@ -573,7 +583,8 @@ html {
 
   .active {
     pointer-events: none;
-    background: grey;
+    /* background: grey; */
+    background: linear-gradient(rgba(0, 0, 0, 0), rgb(98, 98, 98));
     background-position: left;
     filter: initial;
   }
@@ -609,6 +620,7 @@ html {
   /* Wallpaper Mobile */
 
   #hnk {
+    filter: brightness(50%);
     transition: all 1s ease;
     background: url(https://kawaii-mobile.com/wp-content/uploads/2018/02/Houseki-no-Kuni-Phosphophyllite-1080x1920-168x300.jpg)
       no-repeat center center fixed;
@@ -618,6 +630,7 @@ html {
   }
 
   #pmmm {
+    filter: brightness(50%);
     transition: all 1s ease;
     background: url(https://mfiles.alphacoders.com/298/298775.jpg) no-repeat
       center center fixed;
@@ -627,6 +640,7 @@ html {
   }
 
   #csm {
+    filter: brightness(50%);
     transition: all 1s ease;
     background: url(https://w0.peakpx.com/wallpaper/426/973/HD-wallpaper-monochrome-anime-girls-chainsaw-man-makima-chainsaw-man.jpg)
       no-repeat center center fixed;
@@ -636,6 +650,7 @@ html {
   }
 
   #wha {
+    filter: brightness(50%);
     transition: all 1s ease;
     background: url(https://i2.wp.com/theturnaroundblog.com/wp-content/uploads/2019/04/9781632367709_IL_1_53404.jpg?fit=547%2C779&ssl=1)
       no-repeat center center fixed;
@@ -645,9 +660,9 @@ html {
   }
 
   #tpnl {
+    filter: brightness(50%);
     transition: all 1s ease;
-    background: url(https://www.kolpaper.com/wp-content/uploads/2021/03/Promised-Neverland-Wallpapers-7.jpg)
-      no-repeat center center fixed;
+    background: url("./wallpapers/mobiletpnl.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
