@@ -481,7 +481,7 @@ body {
   }
 
   .card-container {
-    /* border: 4px dashed yellow; */
+    border: 4px dashed yellow;
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
   }
@@ -519,7 +519,7 @@ body {
   .card-container {
     transition: all 1s;
     flex-grow: 1;
-    height: 50%;
+    height: 40%;
     background: linear-gradient(black, rgba(0, 0, 0, 0));
     overflow-y: scroll;
 
