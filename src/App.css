@@ -483,7 +483,7 @@ body {
     margin-left: 4%;
     letter-spacing: 4vh;
     transition: 1s ease all;
-    opacity: 50%;
+    opacity: 0.5;
   }
 
   .title2 {
@@ -497,7 +497,7 @@ body {
     margin-left: 10%;
     letter-spacing: 4vh;
     transition: 1s ease all;
-    opacity: 50%;
+    opacity: 0.5;
   }
 
   .react-wallpaper {
