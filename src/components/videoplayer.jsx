@@ -40,13 +40,13 @@ const VideoPlayer = (props) => {
         )}
       </div> */}
 
-      <div className="video-overlay animate__animated animate__fadeInRightBig">
+      <div className="video-overlay animate__animated animate__fadeIn">
         <h1 className="overlay-quote">{props.quote}</h1>
         <h1 className="overlay-author fade-in">{props.author}</h1>
       </div>
       <video
         id="videoPlayer"
-        className=" animate__animated animate__fadeInRightBig"
+        className=" animate__animated animate__fadeIn"
         autoplay
         loop
         muted
