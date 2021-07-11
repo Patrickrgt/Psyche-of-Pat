@@ -230,7 +230,7 @@ class NavDesktop extends Component {
         </div>
 
         <Card className="profile-pat ">
-          {this.state.about == true ? (
+          {this.state.about === true ? (
             <CardActions onClick={() => this.aboutMe()}>
               <div className="card-container-pat animate__animated animate__fadeInRight">
                 <p className="media-text">{this.state.pat.general}</p>
@@ -248,6 +248,7 @@ class NavDesktop extends Component {
           <img
             className="pfp-pat animate__animated animate__fadeIn"
             src={this.state.pat.pfp}
+            alt="phos profile"
           ></img>
         </Card>
 
