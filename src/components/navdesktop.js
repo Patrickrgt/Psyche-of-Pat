@@ -90,7 +90,7 @@ class NavDesktop extends Component {
     pat: {
       pfp: phos,
       general:
-        "Hi, I'm Patrick, I enjoy fictional psychological media that puts characters in fight or flight siutations that convey the author's interpretation of human nature given thrilling circumstances.",
+        "Hi, I'm Patrick, I enjoy fictional psychological media that puts characters in fight or flight siutations that convey the author's interpretation of human nature given thrilling circumstances. Feel free to scroll through the titles!",
     },
   };
 
@@ -233,7 +233,7 @@ class NavDesktop extends Component {
           {this.state.about === true ? (
             <CardActions onClick={() => this.aboutMe()}>
               <div className="card-container-pat animate__animated animate__fadeInRight">
-                <p className="media-text">{this.state.pat.general}</p>
+                <p className="media-text-gen">{this.state.pat.general}</p>
               </div>
             </CardActions>
           ) : (

@@ -238,6 +238,24 @@ body {
   white-space: pre-wrap;
 }
 
+.media-text-gen {
+  font-style: italic;
+  font-size: 2vh;
+  transition: all 0.5s ease;
+  margin-top: 0;
+  padding-bottom: 0;
+  color: white;
+  opacity: 1;
+  white-space: pre-wrap;
+  font-size: 2vh;
+  transition: all 0.5s ease;
+  margin-top: 0;
+  padding-bottom: 0;
+  color: white;
+  opacity: 1;
+  text-shadow: 4px 4px 4px black;
+}
+
 .card-container-tab {
   flex-grow: 1;
   margin-top: auto !important;
