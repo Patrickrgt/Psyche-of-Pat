@@ -58,20 +58,21 @@ class Nav extends Component {
       csm: {
         story:
           "Denji has a simple dream—to live a happy and peaceful life, spending time with a girl he likes. This is a far cry from reality, however, as Denji is forced by the yakuza into killing devils in order to pay off his crushing debts. Using his pet devil Pochita as a weapon, he is ready to do anything for a bit of cash. \n \n Unfortunately, he has outlived his usefulness and is murdered by a devil in contract with the yakuza. However, in an unexpected turn of events, Pochita merges with Denji's dead body and grants him the powers of a chainsaw devil. Now able to transform parts of his body into chainsaws, a revived Denji uses his new abilities to quickly and brutally dispatch his enemies. Catching the eye of the official devil hunters who arrive at the scene, he is offered work at the Public Safety Bureau as one of them. Now with the means to face even the toughest of enemies, Denji will stop at nothing to achieve his simple teenage dreams.",
-        thoughts: "thoughts 3",
+        thoughts:
+          "Tatsuki Fujimoto has a distinct art style that fits the tone of the story so well. Levels of grittiness are shown through detailing--further amplifying the story’s flare. \n \n The story moves at a fast-pace, you would be able to finish reading Chainsaw Man in a day but find yourself thinking about it for months. \n \n Not everything in Chainsaw Man is explained which would leave most hanging, but even without explanations, most would probably be content with where the story is at as of now. \n \n Chainsaw Man is such a fun read, there’s no way to expect what would happen next which always keeps you glued to each page moving from chapter to chapter. \n \n Chainsaw Man is one of those mangas that you would find yourself revisiting and loving with each re-read. \n \n It would be hard to get tired of the dynamic stories and characters that Fujimoto created. The world of Chainsaw Man is such an engaging one, it’s a great entry to manga media for young adults.",
         review: "review 3",
       },
       wha: {
         story:
           "Denji has a simple dream—to live a happy and peaceful life, spending time with a girl he likes. This is a far cry from reality, however, as Denji is forced by the yakuza into killing devils in order to pay off his crushing debts. Using his pet devil Pochita as a weapon, he is ready to do anything for a bit of cash. \n \n Unfortunately, he has outlived his usefulness and is murdered by a devil in contract with the yakuza. However, in an unexpected turn of events, Pochita merges with Denji's dead body and grants him the powers of a chainsaw devil. Now able to transform parts of his body into chainsaws, a revived Denji uses his new abilities to quickly and brutally dispatch his enemies. Catching the eye of the official devil hunters who arrive at the scene, he is offered work at the Public Safety Bureau as one of them. Now with the means to face even the toughest of enemies, Denji will stop at nothing to achieve his simple teenage dreams.",
-        thoughts: "thoughts 3",
-        review: "review 3",
+        thoughts: "thoughts 4",
+        review: "review 4",
       },
       tpnl: {
         story:
           "Denji has a simple dream—to live a happy and peaceful life, spending time with a girl he likes. This is a far cry from reality, however, as Denji is forced by the yakuza into killing devils in order to pay off his crushing debts. Using his pet devil Pochita as a weapon, he is ready to do anything for a bit of cash. \n \n Unfortunately, he has outlived his usefulness and is murdered by a devil in contract with the yakuza. However, in an unexpected turn of events, Pochita merges with Denji's dead body and grants him the powers of a chainsaw devil. Now able to transform parts of his body into chainsaws, a revived Denji uses his new abilities to quickly and brutally dispatch his enemies. Catching the eye of the official devil hunters who arrive at the scene, he is offered work at the Public Safety Bureau as one of them. Now with the means to face even the toughest of enemies, Denji will stop at nothing to achieve his simple teenage dreams.",
-        thoughts: "thoughts 3",
-        review: "review 3",
+        thoughts: "thoughts 5",
+        review: "review 5",
       },
     },
     quotes: [""],
